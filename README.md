@@ -1,8 +1,7 @@
-   ### 基础项目
-    spring + hibernate
+### swagger ui
+    从knife4j中抽取自己需要功能
+    做满足自己的定制需求
 
 
 ### todo
 
--jwt 集成
--ssh架构转 spring boot
