@@ -12,7 +12,7 @@ import java.lang.annotation.*;
  * <p>Help Java development engineers build powerful Swagger documents</p>
  * <p>This annotation belongs to the enhanced annotation of @Api, which is unique to Knife4j and provides Swagger's extended attributes.</p>
  * @since 2.0.3
- * @author <a href="mailto:liukefu2050@sina.com">liukefu2050@sina.com</a>
+ * @author <a href="mailto:xiaoymin@foxmail.com">xiaoymin@foxmail.com</a>
  * 2020/03/31 12:26
  */
 @Target(ElementType.TYPE)

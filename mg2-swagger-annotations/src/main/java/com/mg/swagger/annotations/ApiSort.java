@@ -6,7 +6,7 @@ import java.lang.annotation.*;
 /**
  * Deprecated since 2.0.3,see {@link ApiSupport}
  * @since 1.8.5
- * @author <a href="mailto:liukefu2050@sina.com">liukefu2050@sina.com</a>
+ * @author <a href="mailto:xiaoymin@foxmail.com">xiaoymin@foxmail.com</a>
  */
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)

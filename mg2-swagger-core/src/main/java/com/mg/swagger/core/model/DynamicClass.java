@@ -10,7 +10,7 @@ package com.mg.swagger.core.model;
 /***
  *
  * @since:swagger-bootstrap-ui 1.0
- * @author <a href="mailto:liukefu2050@sina.com">liukefu2050@sina.com</a>
+ * @author <a href="mailto:xiaoymin@foxmail.com">xiaoymin@foxmail.com</a>
  * 2019/07/31 15:00
  */
 public class DynamicClass {

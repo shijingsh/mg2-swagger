@@ -53,20 +53,13 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <mg2-swagger.version>1.0.0</mg2-swagger.version>
+        <knife4j.version>2.0.3</knife4j.version>
         <java.version>1.8</java.version>
-        <spring.version>5.1.0.RELEASE</spring.version>
-        <springfox.version>3.0.0</springfox.version>
+        <spring.version>5.2.5.RELEASE</spring.version>
         <springdoc-openapi.version>1.3.4</springdoc-openapi.version>
         <servlet.version>3.1.0</servlet.version>
-        <clssmate.version>1.5.1</clssmate.version>
-        <javassist.version>3.25.0-GA</javassist.version>
         <slf4j.version>1.7.28</slf4j.version>
-        <swagger2.version>1.5.22</swagger2.version>
-        <swagger3.version>2.1.2</swagger3.version>
-        <spring-boot.version>2.1.4.RELEASE</spring-boot.version>
-        <jfinal.version>4.2</jfinal.version>
-        <hutool.version>5.4.1</hutool.version>
+        <spring-boot.version>2.2.6.RELEASE</spring-boot.version>
         <!-- 打包跳过单元测试 -->
         <skipTests>true</skipTests>
     </properties>
@@ -75,103 +68,64 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>com.github.shijingsh</groupId>
-                <artifactId>mg2-swagger-annotations</artifactId>
-                <version>${mg2-swagger.version}</version>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-v3-annotations</artifactId>
+                <version>${knife4j.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.github.shijingsh</groupId>
-                <artifactId>mg2-swagger-spring</artifactId>
-                <version>${mg2-swagger.version}</version>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-v3-spring</artifactId>
+                <version>${knife4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-v3-spring-webflux</artifactId>
+                <version>${knife4j.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.github.shijingsh</groupId>
-                <artifactId>mg2-swagger-core</artifactId>
-                <version>${mg2-swagger.version}</version>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-v3-core</artifactId>
+                <version>${knife4j.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.github.shijingsh</groupId>
-                <artifactId>mg2-swagger-spring-ui</artifactId>
-                <version>${mg2-swagger.version}</version>
-            </dependency>
-            <!--<dependency>
-                <groupId>com.github.shijingsh</groupId>
-                <artifactId>mg2-swagger-spring-boot-autoconfigure</artifactId>
-                <version>${mg2-swagger.version}</version>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-v3-spring-ui</artifactId>
+                <version>${knife4j.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.github.shijingsh</groupId>
-                <artifactId>mg2-swagger-jfinal-ui</artifactId>
-                <version>${mg2-swagger.version}</version>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-v3-spring-boot-autoconfigure</artifactId>
+                <version>${knife4j.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.github.shijingsh</groupId>
-                <artifactId>mg2-swagger-jfinal</artifactId>
-                <version>${mg2-swagger.version}</version>
-            </dependency>-->
-            <!-- https://mvnrepository.com/artifact/cn.hutool/hutool-all -->
-            <dependency>
-                <groupId>cn.hutool</groupId>
-                <artifactId>hutool-all</artifactId>
-                <version>${hutool.version}</version>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-v3-spring-boot-reactive-autoconfigure</artifactId>
+                <version>${knife4j.version}</version>
             </dependency>
 
-            <!-- https://mvnrepository.com/artifact/com.jfinal/jfinal -->
-            <!--<dependency>
-                <groupId>com.jfinal</groupId>
-                <artifactId>jfinal</artifactId>
-                <version>${jfinal.version}</version>
-                <scope>provided</scope>
-            </dependency>-->
+            <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>1.2.68</version>
+            </dependency>
 
             <!-- https://mvnrepository.com/artifact/org.javassist/javassist -->
             <dependency>
                 <groupId>org.javassist</groupId>
                 <artifactId>javassist</artifactId>
-                <version>${javassist.version}</version>
+                <version>3.25.0-GA</version>
             </dependency>
 
-            <!-- https://mvnrepository.com/artifact/io.swagger/swagger-models -->
-            <dependency>
-                <groupId>io.swagger</groupId>
-                <artifactId>swagger-models</artifactId>
-                <version>${swagger2.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/io.swagger/swagger-core -->
-            <dependency>
-                <groupId>io.swagger</groupId>
-                <artifactId>swagger-core</artifactId>
-                <version>${swagger2.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.swagger</groupId>
-                <artifactId>swagger-annotations</artifactId>
-                <version>${swagger2.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>io.swagger.core.v3</groupId>
-                <artifactId>swagger-annotations</artifactId>
-                <version>${swagger3.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.swagger.core.v3</groupId>
-                <artifactId>swagger-core</artifactId>
-                <version>${swagger3.version}</version>
-            </dependency>
 
             <dependency>
                 <groupId>javax.servlet</groupId>
                 <artifactId>javax.servlet-api</artifactId>
                 <version>${servlet.version}</version>
             </dependency>
-            <dependency>
-                <groupId>com.fasterxml</groupId>
-                <artifactId>classmate</artifactId>
-                <version>${clssmate.version}</version>
-            </dependency>
+
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-web</artifactId>
@@ -195,42 +149,24 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
             <dependency>
-                <groupId>io.springfox</groupId>
-                <artifactId>springfox-boot-starter</artifactId>
-                <version>${springfox.version}</version>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-common</artifactId>
+                <version>${springdoc-openapi.version}</version>
             </dependency>
             <dependency>
-                <groupId>io.springfox</groupId>
-                <artifactId>springfox-swagger2</artifactId>
-                <version>${springfox.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>io.swagger</groupId>
-                        <artifactId>swagger-models</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>io.swagger</groupId>
-                        <artifactId>swagger-core</artifactId>
-                    </exclusion>
-                </exclusions>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-webflux-core</artifactId>
+                <version>${springdoc-openapi.version}</version>
             </dependency>
             <dependency>
-                <groupId>io.springfox</groupId>
-                <artifactId>springfox-bean-validators</artifactId>
-                <version>${springfox.version}</version>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-webmvc-core</artifactId>
+                <version>${springdoc-openapi.version}</version>
             </dependency>
-            <dependency>
-                <groupId>io.springfox</groupId>
-                <artifactId>springfox-spring-webmvc</artifactId>
-                <version>${springfox.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.springfox</groupId>
-                <artifactId>springfox-oas</artifactId>
-                <version>${springfox.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+
+
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-api</artifactId>

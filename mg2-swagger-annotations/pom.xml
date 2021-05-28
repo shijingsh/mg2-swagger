@@ -12,15 +12,4 @@
     <name>mg2-swagger-annotations</name>
     <description>微服务项目引用注解,同UI剥离</description>
 
-    <dependencies>
-        <dependency>
-            <groupId>io.swagger</groupId>
-            <artifactId>swagger-annotations</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>io.swagger.core.v3</groupId>
-            <artifactId>swagger-annotations</artifactId>
-        </dependency>
-    </dependencies>
 </project>

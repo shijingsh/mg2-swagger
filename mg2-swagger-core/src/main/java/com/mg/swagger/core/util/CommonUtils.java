@@ -16,7 +16,7 @@ import java.io.*;
 /***
  *
  * @since:swagger-bootstrap-ui 1.8.5
- * @author <a href="mailto:liukefu2050@sina.com">liukefu2050@sina.com</a>
+ * @author <a href="mailto:xiaoymin@foxmail.com">xiaoymin@foxmail.com</a>
  * 2018/10/11 13:47
  */
 public class CommonUtils {
@@ -114,8 +114,7 @@ public class CommonUtils {
             try {
                 ins.close();
             } catch (IOException e) {
-                //logger.error(e.getMessage(),e);
-                logger.warn("(Ignores) Failed to closeQuiltly,message:{}",e.getMessage());
+                logger.error(e.getMessage(),e);
             }
         }
     }
@@ -125,7 +124,7 @@ public class CommonUtils {
             try {
                 reader.close();
             } catch (IOException e) {
-                logger.warn("(Ignores) Failed to closeQuiltly,message:{}",e.getMessage());
+                logger.error(e.getMessage(),e);
             }
         }
     }

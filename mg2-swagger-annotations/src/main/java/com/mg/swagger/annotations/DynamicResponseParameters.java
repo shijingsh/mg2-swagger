@@ -14,7 +14,7 @@ import java.lang.annotation.Target;
 /**
  *
  * @since 1.9.5
- * @author <a href="mailto:liukefu2050@sina.com">liukefu2050@sina.com</a>
+ * @author <a href="mailto:xiaoymin@foxmail.com">xiaoymin@foxmail.com</a>
  * 2019-7-31 12:54:24
  */
 @Target(ElementType.METHOD)
