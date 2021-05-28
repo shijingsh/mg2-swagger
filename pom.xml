@@ -6,7 +6,7 @@
 
     <groupId>com.github.shijingsh</groupId>
     <artifactId>mg2-swagger</artifactId>
-    <version>3.0.2</version>
+    <version>1.0.0</version>
     <modules>
         <module>mg2-swagger-annotations</module>
         <module>mg2-swagger-spring</module>
@@ -53,7 +53,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <mg2-swagger.version>3.0.2</mg2-swagger.version>
+        <mg2-swagger.version>1.0.0</mg2-swagger.version>
         <java.version>1.8</java.version>
         <spring.version>5.1.0.RELEASE</spring.version>
         <springfox.version>3.0.0</springfox.version>
